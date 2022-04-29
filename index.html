@@ -46,10 +46,15 @@
         let velocity = 6;
         let numOfParticles = 1;
         let radius = 15;
+        let color = '';
+        let r = 0;
+        let g = 129;
+        let b = 221;
 
         let speedInput = document.getElementById("speed");
         let numInput = document.getElementById("num");
         let radiusInput = document.getElementById("radius");
+        let colorInput = document.getElementById("color-input");
 
         speedInput.onchange = () => {
             velocity = speedInput.value;
@@ -61,6 +66,13 @@
 
         radiusInput.onchange = () => {
             radius = radiusInput.value;
+        }
+
+        colorInput.onchange = () => {
+            color = colorInput.value;
+            r = parseInt(color.substr(1,2), 16);
+            g = parseInt(color.substr(3,2), 16);
+            b = parseInt(color.substr(5,2), 16);
         }
 
         particles = [];
@@ -108,7 +120,7 @@
 
             show() {
                 noStroke();
-                fill(255, 89, 38, this.alpha);
+                fill(r, g, b, this.alpha);
                 ellipse(this.x, this.y, radius);
             }
         }

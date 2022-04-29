@@ -56,19 +56,19 @@
         let radiusInput = document.getElementById("radius");
         let colorInput = document.getElementById("color-input");
 
-        speedInput.onchange = () => {
+        speedInput.oninput = () => {
             velocity = speedInput.value;
         }
 
-        numInput.onchange = () => {
+        numInput.oninput = () => {
             numOfParticles = numInput.value;
         }
 
-        radiusInput.onchange = () => {
+        radiusInput.oninput = () => {
             radius = radiusInput.value;
         }
 
-        colorInput.onchange = () => {
+        colorInput.oninput = () => {
             color = colorInput.value;
             r = parseInt(color.substr(1,2), 16);
             g = parseInt(color.substr(3,2), 16);

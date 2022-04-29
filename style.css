@@ -15,4 +15,28 @@ body {
     width: 20vw;
 }
 
+#info {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+}
 
+#controls {
+    margin-top: 10vh;
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input {
+    width: 20vw;
+}
+
+#color-input {
+    box-sizing: border-box;
+    width: 7vw;
+    height: 5vh;
+}

@@ -1,11 +1,11 @@
 particles = [];
 
 function setup() {
-    createCanvas(window.innerWidth - 1000, window.innerHeight - 25);
+    createCanvas(window.innerWidth - 1000, window.innerHeight - 35);
 }
 
 function draw() {
-    background(0);
+    background(255, 255, 255);
     //controllable, quantity of particles
     for (let i = 0; i < 1; i++) {
         let p = new Particle();
@@ -24,7 +24,7 @@ function draw() {
 class Particle {
 
     constructor() {
-        this.x = 300;
+        this.x = 270;
         this.y = 30;
         //velocity of particles controllable
         this.vx = random(-1, 1);
@@ -46,6 +46,6 @@ class Particle {
         noStroke();
         // make the colors random
         fill(255, 89, 38, this.alpha);
-        ellipse(this.x, this.y, 5);
+        ellipse(this.x, this.y, 15);
     }
 }

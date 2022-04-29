@@ -1,5 +1,18 @@
 .p5Canvas {
     border-radius: 20px;
-    width: 90vw;
-    height: 80vh;
+    border-color: #0081dd;
+    border-width: 5px;
+    border-style: solid;
 }
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+#about-text {
+    width: 20vw;
+}
+
+
